@@ -1,0 +1,94 @@
+.header {
+  padding-left: 75px;
+  padding-right: 55px;
+  height: 66px;
+  background: rgba(17, 17, 17, 0.75);
+  color: #ccc;
+  font-size: 17px;
+
+  position: fixed;
+  width: 100%;
+  min-width: 1280px;
+  left: 0;
+  top: 0;
+  z-index: 99;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 头部左边 */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-music {
+  background: url(../asset/music.png);
+  background-size: 100% 100%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.header-music.closed {
+  background-image: url(../asset/music-close.png);
+}
+
+/* logo */
+.header-logo {
+  background: url(../asset/logo.png) center;
+  width: 127px;
+  height: 66px;
+  margin: 0 25px;
+}
+.header-logo h1 {
+  display: none;
+}
+
+.header-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+.header-nav a {
+  padding: 0 30px;
+  letter-spacing: 5px;
+}
+.header-nav a:hover,
+.header-nav a.active {
+  color: #fff;
+  text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+
+.header-nav-bar {
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background: #69e0ff;
+  left: 30px;
+  top: 0;
+}
+/* 头部右边 */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right a {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.header-right a img {
+  width: 27px;
+  height: 27px;
+  margin-left: 18px;
+  opacity: 0.6;
+}
+.header-right a:hover {
+  color: #fff;
+}
+.header-right a:hover img {
+  opacity: 1;
+}

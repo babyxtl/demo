@@ -1,0 +1,117 @@
+/* 整个头部 */
+.top{
+    width: 100%;
+    height: 66px;
+    background: rgba(17, 17, 17, 0.75);
+    color: #ccc; 
+    padding:0px 55px 0px 75px;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    min-width: 1280px;
+}
+/* 头部左边包含音乐，logo，导航部分 */
+.top-left{
+    height: 66px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+/* 头部音乐 */
+.top-left .top-music{
+    background: url(../ys/asset/music.png);
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+/* 音乐关闭的效果，需要JS */
+
+/* .top-left .top-music .music-close{
+    background: url(../ys/asset/music-close.png);
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+} */
+
+
+/* 头部logo */
+.top-left .top-logo{
+    background: url(../ys/asset/logo.png);
+    background-position: center;
+    width: 127px;
+    height: 100%;
+    margin: 0px 25px;
+}
+/* Logo下的官网名称 */
+.top-logo h2{
+    display: none;
+}
+/* 头部导航部分 */
+.top-nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+   
+}
+/* 每个li之间的具体，字体之间的距离 */
+.top-nav li{
+    padding: 0px 30px;
+    letter-spacing: 5px;
+}
+/* 悬浮效果，字体变白，字体背景阴影 */
+.top-nav li:hover,
+.top-nav .nav-one{
+    color: #fff;
+    text-shadow: 0 0 10px #69e0ff,0 0 20px #69e0ff,0 0 40px #69e0ff;
+}
+/* 导航栏上面的蓝色条状，后期需要JS来辅助生效 */
+.top-nav .nav-up{
+    width: 40px;
+    height: 5px;
+    background: #69e0ff;
+    position: absolute;
+    top:0;
+    left:30px;
+}
+/* 导航栏右边 */
+.top-right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right:55px;
+}
+.right-icon{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+}
+.top-right .right-heart{
+    background-image: url(../ys/asset/heart.png);
+}
+.top-right .right-user{
+    background-image: url(../ys/asset/user.png);
+}
+.right-heart, .right-user{
+    background-size: 100% 100%;
+    width: 27px;
+    height: 27px;
+
+}
+
+
+.right-user,.right-heart{
+    margin-left: 18px;
+    opacity:0.6;
+}
+.top-right a:hover div
+{
+    color: #fff;
+    opacity: 1;
+}
+

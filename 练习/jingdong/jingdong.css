@@ -1,0 +1,341 @@
+/** 
+* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) 
+* http://cssreset.com 
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.top{
+    width: 995px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+   
+}
+.top h2{
+    height: 62px;
+    line-height: 62px;
+    color: #666;
+    font-size: 25px;
+    padding-top: 6px;
+    padding-left: 15px;
+
+}
+.top .logo, .top h2{
+    float: left;
+}
+ .logo-right{ 
+    display: block;
+    float: right;
+    font-size: 12px; 
+    color: #999;
+    position: absolute;
+    right:0px;
+    bottom: 10px;
+}
+.logo-right-icon {
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    background: url('../jingdong/images/q-icon.png') no-repeat;
+    vertical-align: middle;
+}
+.logo-icon{
+    background: url(../jingdong/images/icon-tips.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo-wenzi{
+    display: inline-block;
+    color: #666;
+    font-size: 12px;
+    
+}
+
+.logo-bottom {
+    width: 100%; 
+    height: 38.891px;
+    background-color:#fff8f0 ;
+    text-align: center;
+    line-height: 38.891px;
+   
+}
+.logo-bottom a{
+    color: black;
+}
+
+.logo-bottom a:hover{
+    color: black;
+    text-decoration: underline;
+
+} 
+
+
+.main{
+    background-color: #e93854;
+    height: 475px;
+}
+.main-content{
+    width: 995px;
+    height: 100%;
+    margin: 0 auto;
+    background: url(../jingdong/images/background.png);
+}
+.bottom{
+    width: 995px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 12px;
+    padding-top: 22px;
+}
+.bottom ul li{
+    display: inline-block;
+    
+}
+.bottom ul{
+    text-align: center;
+    
+}
+.bottom p{
+    text-align: center;
+    margin: 10px 0;
+}
+.bottom ul li span{
+    margin-left: 10px;
+    margin-right: 8px;
+}
+.login{
+    width: 346px;
+    height: 400px;
+    background-color: white;
+    float: right;
+    margin-top: 10px;
+
+}
+
+.jingao-icon{
+    background: url(../jingdong/images/icon-tips.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.jingao-wenzi{
+    display: inline-block;
+}
+.jingao{
+    width: 100%;
+    background-color: #fff8f0;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    height: 36px;
+    line-height: 36px;
+}
+.toubu{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+    text-align: center;
+    float: left;
+    margin-bottom: 33px;
+    border-bottom: 1px solid #f4f4f4;
+    width: 100%;
+}
+  
+ .toubu .toubu-l{
+    color: #f4f4f4;
+    margin:0px 50px;
+ }
+.toubu-left  a:hover{
+    color: #e4393c;
+}
+.toubu-right  a:hover{
+    color: #e4393c;
+}
+.shurukuang{
+    width: 306px;
+    height: 120px;
+    margin-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    position: relative;
+    
+
+}
+.one-icon{
+    background:url(../jingdong/images/pwd-icons-new.png);
+    width: 38px;
+    height: 38px;  
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #bdbdbd;
+}
+
+.shurukuang-one input{
+    border: 1px solid #bdbdbd;
+    width: 254PX;
+    height: 18PX;
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 19px;
+    display: inline-block;
+    padding: 10px 0px 10px 50px;
+    margin-bottom: 20px;
+   
+
+}
+.tow-icon{
+    display: inline-block;
+    background:url(../jingdong/images/pwd-icons-new.png);
+    width: 38px;
+    height: 38px;  
+    background-position: -48px 0px ;
+    border: 1px solid #bdbdbd;
+    position: absolute
+}
+
+.shurukuang-tow input{
+    border: 1px solid #bdbdbd;
+    width: 254PX;
+    height: 18PX;
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 0px 10px 50px;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    background: transparent;
+}
+
+.wangji a{
+    font-size: 12px;
+    float: right;
+    color: #666;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.wangji a:hover{
+    color:#e4393c;
+    text-decoration: underline;
+}
+.submit{
+    width: 302px;
+    height: 31px;
+    background-color: #e4393c;
+    font-size: 20px;
+    color: white;
+    border: 1px;
+    line-height: 31px;
+    margin-top: 37px;
+    margin-left: 20px; 
+    letter-spacing: 30px;
+    text-align: center;
+    text-indent: 30px;
+    
+}
+.qita{
+    font-size: 12px;
+    color: #666;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    border-top: 1px solid #f4f4f4;
+    padding:20px 20px 0px 20px;
+    box-sizing: border-box;
+}
+.qita-l{
+    color: #f4f4f4;
+}
+.qita-QQ{
+    display: inline-block;
+}             
+.qita-weixin{
+    display: inline-block;
+}
+.qq-icon, .weixin-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../jingdong/images/QQ-weixin.png)no-repeat;
+    vertical-align: middle;
+}
+.weixin-icon {
+    background-position: -20px;
+}
+.zhuce-icon{
+    background: url(../jingdong/images/pwd-icons-new.png);
+    width: 16px;
+    height:16px;
+    display: inline-block;
+    background-position: -104px -75px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.qita .zhuce{
+    float: right;
+    color: #b61d1d;
+    font-size: 14px;
+}
+.qita .zhuce a:hover{
+    text-decoration: underline;
+    color: #b61d1d;
+}
+.qita span{
+    padding-left: 15px;
+    padding-right: 15px;
+}

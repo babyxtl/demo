@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* 盒子的尺寸根据整个盒子固定，不会随着内容，内边距等增加而扩大 */
+    box-sizing: border-box;
+}
+::after,::before{
+    /* 这两个属性需要单独设置 */
+    box-sizing: border-box;
+}
+a{
+    /* 文字颜色继承父元素 */
+    color: inherit;
+    /* 去掉下滑线 */
+    text-decoration: none;
+}
+body{
+    /* 设置展示窗口最小尺寸 */
+    min-width: 1280px;
+    /* 字体 */
+    font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑,
+    STHeiti, MingLiu;
+  /* 字体抗锯齿渲染，可以让文字看上去更加平滑清晰 */
+  -webkit-font-smoothing: antialiased;
+}
+li{
+    list-style-type:none;
+}

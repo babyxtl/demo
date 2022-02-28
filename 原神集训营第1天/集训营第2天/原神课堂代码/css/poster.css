@@ -1,0 +1,160 @@
+.poster {
+  position: relative;
+}
+
+.poster-video {
+  display: block;
+  width: 100%;
+  /* 高度为视口高度的100% */
+  height: 100vh;
+  object-fit: cover;
+}
+
+.poster-badge {
+  position: absolute;
+  width: 100px;
+  left: 20px;
+  bottom: 20px;
+}
+.poster-arrows {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  /* 向左移动自身宽度的一半 */
+  /* margin-left: -300px; */
+  transform: translateX(-50%);
+}
+.poster-arrows div {
+  width: 25px;
+  height: 15px;
+  background: url(../asset/arrow.png);
+  /* 应用动画 */
+  animation: fade 1.5s infinite;
+}
+/* 定义动画 */
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* 如果选中第二个div */
+.poster-arrows div:nth-child(2) {
+  /* 如果设置延时 */
+  animation-delay: 0.5s;
+}
+.poster-arrows div:last-child {
+  /* 如果设置延时 */
+  animation-delay: 1s;
+}
+
+/* 下载区域 */
+.poster-d {
+  position: absolute;
+  width: 540px;
+  height: 125px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.poster-qrcode {
+  position: relative;
+}
+
+.poster-qrcode img:first-child {
+  width: 102px;
+  height: 102px;
+  display: block;
+}
+.poster-qrcode img:last-child {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border: 2px solid #475e7d;
+  border-radius: 4px;
+}
+
+.poster-part img {
+  width: 160px;
+  display: block;
+}
+.poster-part img:last-child {
+  display: none;
+}
+.poster-part a:hover img:first-child {
+  display: none;
+}
+.poster-part a:hover img:last-child {
+  display: block;
+}
+
+.poster-pc img {
+  display: block;
+  width: 111px;
+  height: 111px;
+}
+.poster-pc img:last-child {
+  display: none;
+}
+
+.poster-pc:hover img:first-child {
+  display: none;
+}
+.poster-pc:hover img:last-child {
+  display: block;
+}
+
+.poster-play {
+  width: 356px;
+  height: 76px;
+  position: absolute;
+  bottom: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: 1px solid #fff;
+  background: url(../asset/play-bg.png);
+}
+.poster-play-button {
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.poster-play-button::after {
+  content: "";
+  background: url(../asset/play-inner.png);
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.poster-play-button {
+  /* 过渡：CSS数值属性的变化经过一段时间 */
+  transition: 0.2s;
+}
+.poster-play-button:hover {
+  background: transparent;
+}
+.poster-play-button::after:hover {
+  background-position: 0 -28px;
+}

@@ -1,0 +1,123 @@
+.city-item {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+.city-img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.city-item::after{
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.city-item h2{
+    background: url(../ys/asset/title-square.png)no-repeat center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 260px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: 6;
+}
+.city-item::before{
+    content: "";
+    width: 100%;
+    height: 260px;
+    border: 7px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    transition: 0.5s;
+}
+.city-item h2::after{
+    content: "";
+    background: url(../ys/asset/title-decoration.png) no-repeat;
+    width: 210px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 160px;
+    transform: translate(-50%);
+    z-index: 4;
+    opacity: 0;
+    transition: 0.5s;
+}
+.city-hero{
+    position: absolute;
+    top: 0;
+    right: -100px;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.5s;
+}
+.city-item:hover .city-hero{
+    opacity: 1;
+}
+.city-item:hover h2::after{
+    opacity: 1;
+}
+.city-item:hover::before{
+    border-color: #fff;
+
+}
+.city-item:hover::after{
+    background: rgba(0, 0, 0, 0.2);
+}
+.city-item:hover .city-img{
+    transform: scale(1.05);
+}
+.city-wait{
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+}
+.city-wait img{
+    display: block;
+    width: 100%;
+    height: 260px;
+}
+.city-wait::after{
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.city-wait h2{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 260px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: 6;
+}
+
